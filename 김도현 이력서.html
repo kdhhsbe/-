@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>김도현 이력서</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="vendor/dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="vendor/vendor/MDBFree/css/mdb.min.css" rel="stylesheet">
+    <style>
+        body{
+          font-family: 맑은 고딕,"malgun gothic", 돋음, "Dotum",Gulim, Arial, serif;
+        }
+
+        .page-header .fa{
+          color: #337ab7;
+          margin-right: 10px;
+          width:30px;
+        }
+
+        .page-header img{
+          width: 180px;
+          height: auto;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        .page-header #name{
+          font-size:25px;
+          color: #337ab7;
+          font-weight: bold;
+        }
+
+        #yabawe{
+          width:90%;
+          height:80px;
+          margin:auto auto;
+          position:relative;
+        }
+
+        .panel-heading,.timeline .timeline-title{
+          font-weight: bold;
+        }
+
+        .project_title{
+          color: #337ab7;
+          font-weight: bold;
+          font-size:15px;
+        }
+
+        .timeline ul li div dl
+        {
+          font-size:12px;
+          margin-top:3px;
+        }
+
+        .project_wrap{
+          border-top:1px solid #eee;
+        }
+        /* timeline 수정 */
+        .timeline > li.timeline-inverted > .timeline-panel{
+          float:left;
+        }
+
+        .timeline > li > .timeline-panel{
+          width:90%;
+        }
+
+        .timeline > li > .timeline-badge{
+          left:100%;
+        }
+
+        .timeline:before{
+          left:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="page-header container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="vendor/images/김도현3.png" alt="추석때" class="img-rounded img-reponsive center-block">
+                </div>
+                <div class="col-md-5 name">
+                    <p id="name">김도현 <small>Kim Do Hyun</small></p>
+                      <p>
+                        안녕하세요. <br/>
+                        주 경력은 <strong>BI 시스템</strong>을 구축하는 업무를 하였고, <mark>BI솔루션제품, Sql, 자바스크립트, Html</mark>을 주로 사용하였습니다.<br/>
+                        <strong>DW</strong>나 <strong>MART</strong>테이블에서 사용할 데이터를 추출하는 SQL작성하고
+                        데이터를 시각적으로 보여줄 차트와 그리드를 만들어서 <strong>Dashboard</strong>, <strong>웹레포팅 페이지</strong>를 만들었습니다.<br/>
+                      </p>
+
+                      <p>
+                        자바스크립트에 관심이 많고 Node나 React,Vue 같은 다양한 기술을 공부하고 사용하고 싶어서 이직을 결심했습니다.
+                        혼자 공부하는것도 좋지만 현업에서 일하시는 분들과 같이 일하면서 교류를 하면 재미와 성장이 배가 될것입니다.
+                        또 자바스크립트로 풀스택 개발자를 목표로 하고 있습니다.                        
+                        <br/>
+                        감사합니다.
+                      </p>
+
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-envelope fa-1x"></i> kdhhsbe56@gmail.com <hr/>
+                        </li>
+                        <li>
+                            <i class="fa fa-home fa-1x"></i> 서울시 서대문구 홍제동 <hr/>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-1x"></i> 010 - 3151 - 3669 <hr/>
+                        </li>
+                        <li>
+                            <i class="fa fa-graduation-cap fa-1x"></i> 서일전문대 졸업 <hr/>
+                        </li>
+                        <li>
+                            <i class="fa fa-desktop fa-1x"></i> 경력 7년
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="experience" class="container">
+        <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-list-ul"></i> Skills
+                        </div>
+                      <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <canvas id="radarChart_skill"></canvas>
+                            <div class="alert alert-success"> 주관적인 데이터입니다. </div>
+                        </div>
+                      <!-- /.panel-body -->
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-weixin"></i> Character
+                        </div>
+                      <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <canvas id="radarChart_character"></canvas>
+                            <div class="alert alert-success"> 주관적인 데이터입니다. </div>
+                        </div>
+                      <!-- /.panel-body -->
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <i class="fa fa-paperclip"></i> 포트폴리오
+                    </div>
+                    <!-- /.panel-heading -->
+                      <div class="panel-body">
+                        <section id="game">
+                            <h1>야바위</h1>
+                            <h3>개요</h3>
+                            <p>주사위가 숨어있는 컵을 찾는 게임.</p>
+                            <hr/>
+                            <div id="condition" class="form-inline">
+                                 <label>컵수: </label>
+                                 <select id="cupsCnt">
+                                     <option value="4">4</option>
+                                     <option value="5" selected>5</option>
+                                     <option value="6">6</option>
+                                     <option value="7">7</option>
+                                     <option value="8">8</option>
+                                  </select>
+                                  <label>섞는 횟수: </label>
+                                  <select id="suffleTime">
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6" selected>6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                   </select>
+                                   <label>duration:</label>
+                                   <input id="duration" class="form-control input-sm" value="500">
+                                  <button id="startBtn" type="button" class="btn btn-default btn-lg">시작</button>
+                                  <button id="initBtn" type="button" class="btn btn-default btn-lg">초기화</button>
+                              </div>
+                              <div>
+                                <div id="gameProgressExplanation" class="alert alert-success"> 시작버튼을 누르세요 </div>
+                              </div>
+                              <div id="yabawe"></div>
+                              <div>
+                                <em>
+                                  애니메이션효과는 Toast UI 컴포넌트를 참조하여 만들었습니다.<br/>
+                                  이메일에 js파일이 첨부되지 않아 html script tag에 삽입했습니다.
+                                </em>
+                              </div>
+                        </section>
+                      </div>
+                    <!-- /.panel-body -->
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-hand-o-down"></i> Source <small>click</small>
+                        </div>
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                              <i class="fa fa-arrow-circle-down"></i> anim() <small>에니메이션 실행 함수</small>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                              <pre><code>
+GAME.anim = (function(){
+
+    function noop() {}
+
+    //엑셀레이터 정의
+    function Accelerate(){
+      this.curveSin = function(t,h){
+        return Math.sin((180 * t) * Math.PI / 180) * h;
+      }
+
+      this.linear = function(t){
+        return t;
+      }
+    }
+
+    function anim(cond){
+      var from = cond.from || [0,0],
+          to =  cond.to || [100,0],
+          frame = cond.frame || noop,
+          duration = cond.duration || 500,
+          movement = cond.movement || 'line',
+          height = cond.height || 50,
+          complete = cond.complete || noop;
+
+      var diffs = from.map(function (val, idx) {
+        return to[idx] - val;
+      });
+
+
+        var timeoutId = 0;
+        var accel = new Accelerate();
+
+        var runner = function(start){
+          return function tick(){
+            var elapsed = new Date() - start;  									 // 현재시간 - 시작시간
+            var progress = Math.min(1, elapsed / duration || 0); //진행시간/동작시간 으로 진행률
+            var values = from.map(function (val, idx) {
+              if( movement == 'line' ) {
+                return (diffs[idx] * accel.linear(progress)) + val;
+              }else if( movement == 'curve' ){
+                if( idx == 0 ) {
+                  return (diffs[idx] * accel.linear(progress)) + val;
+                }else{
+                  return accel.curveSin(progress, height);
+                }
+              }
+            });
+
+            frame.apply(null, [values]);
+            timeoutId = window.requestAnimationFrame(tick);
+
+            if(progress >= 1){
+              window.cancelAnimationFrame(timeoutId);
+              complete();
+            }
+          }
+        }
+
+        return {
+          run:function(start){
+            var start = new Date();
+            return runner(start);
+          }
+        }
+    }
+    return anim;
+})();
+                                              </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                              <i class="fa fa-arrow-circle-down"></i> animSync() <small>에니메이션실행을 동기적으로 실행</small>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                              <pre><code>
+GAME.animSync = (function(){
+  return function(){
+    var anim = GAME.anim,
+        moveList = arguments[0]||[],
+        currMoveSet = [],
+        completeCallback = arguments[1]||{};
+
+    function exec(updown, target, from, to){
+      var currCup = target,
+          h = updown==0? 50:-50,
+          fromX = [from * 60],
+          toX = [to * 60];
+
+          fromX.push(0);
+          toX.push(0);
+
+      var animObj = anim({
+        from: fromX,
+        to: toX,
+        duration: 500,
+        frame: function(val) {
+          currCup.isMoveing = true;
+          currCup.cup.style.left = val[0] + "px";
+          currCup.cup.style.top = val[1] + "px";
+        },
+        movement: 'curve',
+        height: h,
+        complete: function() {
+          currCup.isMoveing = false;
+          currCup.currentLocationIndex = to;
+          obj.start();
+        }
+      }).run()();
+    }
+
+    var obj = {
+      tick:function(){
+        currMoveSet = moveList.shift();
+        var from = currMoveSet[0],
+            to = currMoveSet[1];
+
+        exec(0, from, from.currentLocationIndex, to.currentLocationIndex);
+        exec(1, to, to.currentLocationIndex, from.currentLocationIndex);
+      },
+      start:function(){
+        var flag = true;
+        currMoveSet.forEach(function(obj, index){
+          flag = flag && !obj.isMoveing;
+        });
+
+        if(flag){
+          if(moveList.length != 0){
+            this.tick();
+          }else{
+            this.complete(completeCallback);
+          }
+        }
+      },
+      complete:function(callback){
+        callback();
+      }
+    };
+    return obj
+  }
+})();
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                              <i class="fa fa-arrow-circle-down"></i> Yabawe <small>야바위 게임 객체</small>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                              <pre><code>
+GAME.Yabawe = function(cond){
+  //컵과 애니메이션 참조
+  var Cup = GAME.Cup,
+      animSync = GAME.animSync,
+      cupWithDice = null,
+      cups = [],
+      eventPool = {},
+      cupCnt = cond.cupCnt || 4,
+      suffleTime =  cond.suffleTime || 5,
+      duration =  cond.duration || 500,
+      checkAnswer = cond.checkAnswer || noop,
+      progressDescription = document.getElementById('gameProgressExplanation'),
+      yabawe = document.getElementById('yabawe');
+
+  function noop() {}
+
+  //컵을 생성한다
+  var createCups = function(cnt){
+    for(var i = 0; i&lt;cnt; i++){
+      cups.push(new Cup("yabawe", i));
+    }
+  };
+
+  // 컵 섞는게 끝나면 컵 선택 이벤트걸기
+  var addEventClick = function(callback){
+      eventPool.checkAnswerHandler = function(e){
+        var flag = e.target.id == cupWithDice.cup.id;
+        if(e.eventPhase === 2) return false;
+        if(flag){
+          e.target.textContent='주사위';
+        }else{
+          e.target.textContent='땡';
+        }
+
+        callback(flag);
+      }
+      yabawe.addEventListener('click', eventPool.checkAnswerHandler, false);
+      progressDescription.textContent = '주사위가 들어있는 컵을 선택하세요.';
+  };
+
+  // 컵을 섞는다
+  var suffleCups = function(){
+      var suffleCnt = 0,
+          moveCupList = [],
+          currMoveSet = [],
+          cupWithDiceNum = suffleCnt == 0 ? parseInt(cupWithDice.cup.id, 10) : undefined,
+          that = this;
+
+      for(var i = 0; i&lt;suffleTime; i++){
+        var arr = getRandomNumber(cupWithDiceNum, cupCnt);
+        var moveSet = arr.map(function(obj, index){
+            return cups[obj];
+        });
+        moveCupList.push(moveSet);
+      }
+
+      var anim = animSync(moveCupList, duration, function(){addEventClick(checkAnswer)});
+      anim.start();
+
+      function getRandomNumber(cupWithDiceNum, boxCnt){
+        var randomNumberArray = [],
+            first =  cupWithDiceNum || Math.floor(Math.random() * boxCnt),
+            second = Math.floor(Math.random() * boxCnt);
+
+        if(first === second){
+          return getRandomNumber(cupWithDiceNum, boxCnt);
+        }else{
+          randomNumberArray.push(first, second);
+          randomNumberArray.sort(function(a,b){
+            return a-b;
+          });
+          return randomNumberArray;
+        }
+      }
+  };
+
+  return {
+    //야바위 초기화
+    initYabawe: function(){
+        createCups(cupCnt);
+        var num = Math.floor(Math.random() * cupCnt);
+        cups[num].setDice(true);
+        cups[num].setCupText('주사위');
+        cupWithDice = cups[num];
+    },
+
+    // 게임시작
+    startGame: function(){
+        cupWithDice.setCupText();
+        suffleCups();
+        progressDescription.textContent = '섞는중................';
+    },
+
+    //컵, 이벤트 삭제
+    distroy: function(){
+        cups.forEach(function(cup, index){
+          yabawe.removeChild(cup.cup);
+        });
+        cups = [];
+        yabawe.removeEventListener('click', eventPool.checkAnswerHandler);
+        progressDescription.textContent = '시작버튼을 누르세요.';
+        progressDescription.classList.remove('alert-danger');
+        progressDescription.classList.add('alert-success');
+    },
+    setCupCnt: function(cnt){
+      cupCnt = cnt;
+    },
+    setSuffleTime: function(cnt){
+      suffleTime = cnt;
+    },
+    setDuration: function(cnt){
+      duration = cnt;
+    }
+  };
+}
+                                          </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                <i class="fa fa-arrow-circle-down"></i> Cup <small>야바위게임에 컵 객체</small>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <pre><code>
+      GAME.Cup = (function(){
+        function Cup(node, index){
+            this.currentLocationIndex = index;
+            this.isMoveing = false;
+            this.diceYn = false;
+
+            this.cup = document.createElement('div');
+            this.cup.id = index;
+            this.cup.style.display = "inline-block";
+            this.cup.style.position = "absolute";
+            this.cup.style.width = "50px";
+            this.cup.style.height = "50px";
+            this.cup.style.left = index * 60 + "px";
+            this.cup.style.backgroundColor = "#11ffb7";
+            this.cup.style.border = "1px solid black";
+            this.cup.setAttribute("class", "cup");
+            document.getElementById(node).appendChild(this.cup);
+          }
+
+          Cup.prototype.setDice = function(flag){
+              this.diceYn = flag;
+          };
+
+          Cup.prototype.setCupText = function(str){
+              this.cup.textContent = str || '';
+          };
+
+          return Cup;
+      })();
+                                          </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <i class="fa fa-clock-o fa-fw"></i> 경력사항
+                  </div>
+                  <!-- /.panel-heading -->
+                  <div class="panel-body">
+                      <ul class="timeline">
+                          <li>
+                              <div class="timeline-badge"><i class="fa fa-check"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">Eyeqmc<small> 3년10개월</small></h4>
+                                      <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2013.10 ~ 2017.07</small>
+                                      </p>
+                                  </div>
+                                  <div class="timeline-body">
+                                      <ul class="list-unstyled">
+                                        <li>
+                                          <div class="project_title"><i class="fa fa-tasks fa-fw"></i>인터플렉스 BI 시스템</div>
+                                          <div class="project_wrap">
+                                            <dl>
+                                              <dt>역활</dt>
+                                              <dd>DATA 엔지니어-필요한 데이터를 월,주,일별 MART테이블에 적재하는 ETL작업 수행</dd>
+                                              <dt>기술</dt>
+                                              <dd>KETTLE(ETL TOOL), SQL(oracle, mssql)</dd>
+                                            </dl>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="project_title"><i class="fa fa-tasks fa-fw"></i>심평원 요양기관 프로파일 시스템</div>
+                                          <div class="project_wrap">
+                                            <dl>
+                                              <dt>역활</dt>
+                                              <dd>고객이 관리하는 지표를 차트와 그리드를 사용하여 Dashboard, 상세조회 화면을 구현</dd>
+                                              <dt>기술</dt>
+                                              <dd>TOGA(BI솔루션), SQL(hana), JAVASCRIPT</dd>
+                                            </dl>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="project_title"><i class="fa fa-tasks fa-fw"></i>삼성전자 GMES BI 시스템</div>
+                                          <div class="project_wrap">
+                                            <dl>
+                                              <dt>역활</dt>
+                                              <dd>고객이 관리하는 지표를 Dashboard로 만들어 롤링기능가능한 상황판 구현</dd>
+                                              <dt>기술</dt>
+                                              <dd>TOGA(BI솔루션), SQL(oracle), JAVASCRIPT(GogleMap 사용)</dd>
+                                            </dl>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="project_title"><i class="fa fa-tasks fa-fw"></i>삼성디스플레이 ETIMS 시스템</div>
+                                          <div class="project_wrap">
+                                            <dl>
+                                              <dt>역활</dt>
+                                              <dd>고객이 관리하는 지표를 차트와 그리드를 사용하여 Dashboard, 상세조회 화면을 구현</dd>
+                                              <dt>기술</dt>
+                                              <dd>기술: TOGA(BI솔루션), SQL(db2), JAVASCRIPT(jqueryUI 사용)</dd>
+                                            </dl>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="timeline-badge warning"><i class="fa fa-backward"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">소프트원<small> 1년11개월</small></h4>
+                                      <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2011.10 ~ 2013.09</small>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <ul class="list-unstyled">
+                                      <li>
+                                        <div class="project_title"><i class="fa fa-tasks fa-fw"></i>LG패션 SNOP시스템 구축</div>
+                                        <div class="project_wrap">
+                                          <dl>
+                                            <dt>역활</dt>
+                                            <dd>화면개발</dd>
+                                            <dt>기술</dt>
+                                            <dd>TOGA(BI솔루션), SQL(oracle), JAVASCRIPT(jqueryUI 사용)</dd>
+                                          </dl>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="project_title"><i class="fa fa-tasks fa-fw"></i>LG패션 영업시스템 구축</div>
+                                        <div class="project_wrap">
+                                          <dl>
+                                            <dt>역활</dt>
+                                            <dd>화면개발</dd>
+                                            <dt>기술</dt>
+                                            <dd>TOGA(BI솔루션), SQL, JAVASCRIPT</dd>
+                                          </dl>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="project_title"><i class="fa fa-tasks fa-fw"></i>JDC 면세점ERP 시스템 구축</div>
+                                        <div class="project_wrap">
+                                          <dl>
+                                            <dt>역활</dt>
+                                            <dd>화면개발</dd>
+                                            <dt>기술</dt>
+                                            <dd>마이빌더, SQL, JAVASCRIPT, JAVA(전자정부 프레임워크)</dd>
+                                          </dl>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="timeline-badge danger"><i class="fa fa-backward"></i>
+                              </div>
+                              <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                      <h4 class="timeline-title">솔리데오시스템즈<small> 1년1개월</small></h4>
+                                      <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2010.07 ~ 2011.08</small>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <ul class="list-unstyled">
+                                      <li>
+                                        <div class="project_title"><i class="fa fa-tasks fa-fw"></i>건축행정 시스템 유지보수</div>
+                                        <div class="project_wrap">
+                                          <dl>
+                                            <dt>역활</dt>
+                                            <dd>유지보수/개발</dd>
+                                            <dt>기술</dt>
+                                            <dd>JAVA, SQL, JAVASCRIPT</dd>
+                                          </dl>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- /.panel-body -->
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+    <script>
+    (function(){
+
+      var ctxRs = document.getElementById("radarChart_skill").getContext('2d');
+      var ctxRc = document.getElementById("radarChart_character").getContext('2d');
+
+      var myRadarChart = new Chart(ctxRs, {
+          type: 'radar',
+          data: {
+              labels: ["Java", "Javascript", "Html", "Css", "Sql"],
+              datasets: [{
+                  label: false,
+      				    borderWidth: 1,
+      				    borderColor:'#337ab7',
+      				    backgroundColor:'rgba(0, 0, 0, 0.1)',
+      				    pointStyle: 'rectRounded',
+      				    pointBorderWidth: 2,
+      				    pointBorderColor: '#ffffff',
+      				    pointBackgroundColor: '#337ab7',
+      				    pointRadius: 5,
+                  data: [30, 65, 50, 40, 60]
+              }]
+          },
+          options: {
+              legend: {
+                  display: false
+              },
+              responsive: true,
+      		    scale: {
+      			      ticks: {
+                      suggestedMin: 0,
+                      suggestedMax: 100,
+      				        stepSize: 25
+                  },
+      		    	  pointLabels: {
+      				       fontSize: 14
+      			      }
+      		    }
+          }
+      });
+
+      var myRadarChartc = new Chart(ctxRc, {
+          type: 'radar',
+          data: {
+              labels: ["외향성", "체력", "창의력", "판단", "내향성","정신력","커뮤니티","배움"],
+              datasets: [{
+                  label: false,
+      				    borderWidth: 1,
+      				    borderColor:'#337ab7',
+      				    backgroundColor:'rgba(224, 11, 57, 0.5)',
+      				    pointStyle: 'rectRounded',
+      				    pointBorderWidth: 2,
+      				    pointBorderColor: '#ffffff',
+      				    pointBackgroundColor: '#337ab7',
+      				    pointRadius: 5,
+                  data: [40, 70, 40, 35, 70, 55, 70, 60]
+              }]
+          },
+          options: {
+              legend: {
+                  display: false
+              },
+              responsive: true,
+      		    scale: {
+      			      ticks: {
+                      suggestedMin: 0,
+                      suggestedMax: 100,
+      				        stepSize: 25
+                  },
+      		    	  pointLabels: {
+      				       fontSize: 14
+      			      }
+      		    }
+          }
+      });
+
+      var GAME = GAME || {};
+      //애니메이션 컴포넌트
+      GAME.anim = (function(){
+
+          function noop() {}
+
+          //엑셀레이터 정의
+          function Accelerate(){
+            this.curveSin = function(t,h){
+              return Math.sin((180 * t) * Math.PI / 180) * h;
+            }
+
+            this.linear = function(t){
+              return t;
+            }
+          }
+
+          function anim(cond){
+            var from = cond.from || [0,0],
+                to =  cond.to || [100,0],
+                frame = cond.frame || noop,
+                duration = cond.duration || 500,
+                movement = cond.movement || 'line',
+                height = cond.height || 50,
+                complete = cond.complete || noop;
+
+            var diffs = from.map(function (val, idx) {
+              return to[idx] - val;
+            });
+
+
+              var timeoutId = 0;
+              var accel = new Accelerate();
+
+              var runner = function(start){
+                return function tick(){
+                  var elapsed = new Date() - start;  									 // 현재시간 - 시작시간
+                  var progress = Math.min(1, elapsed / duration || 0); //진행시간/동작시간 으로 진행률
+                  var values = from.map(function (val, idx) {
+                    if( movement == 'line' ) {
+                      return (diffs[idx] * accel.linear(progress)) + val;
+                    }else if( movement == 'curve' ){
+                      if( idx == 0 ) {
+                        return (diffs[idx] * accel.linear(progress)) + val;
+                      }else{
+                        return accel.curveSin(progress, height);
+                      }
+                    }
+                  });
+
+                  frame.apply(null, [values]);
+                  timeoutId = window.requestAnimationFrame(tick);
+
+                  if(progress >= 1){
+                    window.cancelAnimationFrame(timeoutId);
+                    complete();
+                  }
+                }
+              }
+
+              return {
+                run:function(start){
+                  var start = new Date();
+                  return runner(start);
+                }
+              }
+          }
+          return anim;
+      })();
+
+      GAME.animSync = (function(){
+        return function(){
+          var anim = GAME.anim,
+              moveList = arguments[0]||[],
+              duration = arguments[1]||500,
+              currMoveSet = [],
+              completeCallback = arguments[2]||{};
+
+          function exec(updown, target, from, to){
+            var currCup = target,
+                h = updown==0? 50:-50,
+                fromX = [from * 60],
+                toX = [to * 60];
+
+                fromX.push(0);
+                toX.push(0);
+
+            var animObj = anim({
+              from: fromX,
+              to: toX,
+              duration: duration,
+              frame: function(val) {
+                currCup.isMoveing = true;
+                currCup.cup.style.left = val[0] + "px";
+                currCup.cup.style.top = val[1] + "px";
+              },
+              movement: 'curve',
+              height: h,
+              complete: function() {
+                currCup.isMoveing = false;
+                currCup.currentLocationIndex = to;
+                obj.start();
+              }
+            }).run()();
+          }
+
+          var obj = {
+            tick:function(){
+              currMoveSet = moveList.shift();
+              var from = currMoveSet[0],
+                  to = currMoveSet[1];
+
+              exec(0, from, from.currentLocationIndex, to.currentLocationIndex);
+              exec(1, to, to.currentLocationIndex, from.currentLocationIndex);
+            },
+            start:function(){
+              var flag = true;
+              currMoveSet.forEach(function(obj, index){
+                flag = flag && !obj.isMoveing;
+              });
+
+              if(flag){
+                if(moveList.length != 0){
+                  this.tick();
+                }else{
+                  this.complete(completeCallback);
+                }
+              }
+            },
+            complete:function(callback){
+              callback();
+            }
+          };
+          return obj
+        }
+      })();
+
+      // cup정의
+      GAME.Cup = (function(){
+        function Cup(node, index){
+            this.currentLocationIndex = index;
+            this.isMoveing = false;
+            this.diceYn = false;
+
+            this.cup = document.createElement('div');
+            this.cup.id = index;
+            this.cup.style.display = "inline-block";
+            this.cup.style.position = "absolute";
+            this.cup.style.width = "50px";
+            this.cup.style.height = "50px";
+            this.cup.style.left = index * 60 + "px";
+            this.cup.style.backgroundColor = "#11ffb7";
+            this.cup.style.border = "1px solid black";
+            this.cup.setAttribute("class", "cup");
+            document.getElementById(node).appendChild(this.cup);
+          }
+
+          Cup.prototype.setDice = function(flag){
+              this.diceYn = flag;
+          };
+
+          Cup.prototype.setCupText = function(str){
+              this.cup.textContent = str || '';
+          };
+
+          return Cup;
+      })();
+
+      //야바위 컴포넌트
+      GAME.Yabawe = function(cond){
+        //컵과 애니메이션 참조
+        var Cup = GAME.Cup,
+            animSync = GAME.animSync,
+            cupWithDice = null,
+            cups = [],
+            eventPool = {},
+            cupCnt = cond.cupCnt || 4,
+            suffleTime =  cond.suffleTime || 5,
+            duration =  cond.duration || 500,
+            checkAnswer = cond.checkAnswer || noop,
+            progressDescription = document.getElementById('gameProgressExplanation'),
+            yabawe = document.getElementById('yabawe');
+
+        function noop() {}
+
+        //컵을 생성한다
+        var createCups = function(cnt){
+          for(var i = 0; i<cnt; i++){
+            cups.push(new Cup("yabawe", i));
+          }
+        };
+
+        // 컵 섞는게 끝나면 컵 선택 이벤트걸기
+        var addEventClick = function(callback){
+            eventPool.checkAnswerHandler = function(e){
+              var flag = e.target.id == cupWithDice.cup.id;
+              if(e.eventPhase === 2) return false;
+              if(flag){
+                e.target.textContent='주사위';
+              }else{
+                e.target.textContent='땡';
+              }
+
+              callback(flag);
+            }
+            yabawe.addEventListener('click', eventPool.checkAnswerHandler, false);
+            progressDescription.textContent = '주사위가 들어있는 컵을 선택하세요.';
+        };
+
+        // 컵을 섞는다
+        var suffleCups = function(){
+            var suffleCnt = 0,
+                moveCupList = [],
+                currMoveSet = [],
+                cupWithDiceNum = suffleCnt == 0 ? parseInt(cupWithDice.cup.id, 10) : undefined,
+                that = this;
+
+            for(var i = 0; i<suffleTime; i++){
+              var arr = getRandomNumber(cupWithDiceNum, cupCnt);
+              var moveSet = arr.map(function(obj, index){
+                  return cups[obj];
+              });
+              moveCupList.push(moveSet);
+            }
+
+            var anim = animSync(moveCupList, duration, function(){addEventClick(checkAnswer)});
+            anim.start();
+
+            function getRandomNumber(cupWithDiceNum, boxCnt){
+              var randomNumberArray = [],
+                  first =  cupWithDiceNum || Math.floor(Math.random() * boxCnt),
+                  second = Math.floor(Math.random() * boxCnt);
+
+              if(first === second){
+                return getRandomNumber(cupWithDiceNum, boxCnt);
+              }else{
+                randomNumberArray.push(first, second);
+                randomNumberArray.sort(function(a,b){
+                  return a-b;
+                });
+                return randomNumberArray;
+              }
+            }
+        };
+
+        return {
+          //야바위 초기화
+          initYabawe: function(){
+              createCups(cupCnt);
+              var num = Math.floor(Math.random() * cupCnt);
+              cups[num].setDice(true);
+              cups[num].setCupText('주사위');
+              cupWithDice = cups[num];
+          },
+
+          // 게임시작
+          startGame: function(){
+              cupWithDice.setCupText();
+              suffleCups();
+              progressDescription.textContent = '섞는중................';
+          },
+
+          //컵, 이벤트 삭제
+          distroy: function(){
+              cups.forEach(function(cup, index){
+                yabawe.removeChild(cup.cup);
+              });
+              cups = [];
+              yabawe.removeEventListener('click', eventPool.checkAnswerHandler);
+              progressDescription.textContent = '시작버튼을 누르세요.';
+              progressDescription.classList.remove('alert-danger');
+              progressDescription.classList.add('alert-success');
+          },
+          setCupCnt: function(cnt){
+            cupCnt = cnt;
+          },
+          setSuffleTime: function(cnt){
+            suffleTime = cnt;
+          },
+          setDuration: function(cnt){
+            duration = cnt;
+          }
+        };
+      }
+
+      //게임 생성
+      var yabawe = GAME.Yabawe({
+        cupCnt: 5,
+        suffleTime: 6,
+        duration: 500,
+        checkAnswer:function(isAnswer){
+          var progressStep = document.getElementById('gameProgressExplanation');
+          if(isAnswer){
+            progressStep.textContent = '정답!천재';
+            progressStep.classList.remove('alert-danger');
+            progressStep.classList.add('alert-success');
+          }else{
+            progressStep.textContent = '땡!다시 선택하세요.' ;
+            progressStep.classList.remove('alert-success');
+            progressStep.classList.add('alert-danger');
+          }
+        }
+      });
+
+      yabawe.initYabawe();
+
+      var sb = document.getElementById('startBtn');
+      var ib = document.getElementById('initBtn');
+      var cs = document.getElementById('cupsCnt');
+      var ss = document.getElementById('suffleTime');
+      var duration = document.getElementById('duration');
+
+      sb.addEventListener("click", function(){
+        yabawe.startGame();
+      });
+
+      ib.addEventListener("click", function(){
+        yabawe.distroy();
+        yabawe.initYabawe();
+      });
+
+      cs.addEventListener("change", changeEventHandler);
+      ss.addEventListener("change", changeEventHandler);
+      duration.addEventListener("change", changeEventHandler);
+
+      function changeEventHandler(){
+        var csValue = cs.value;
+        var ssValue = ss.value;
+        var durationValue = duration.value;
+        yabawe.distroy();
+        yabawe.setCupCnt(csValue);
+        yabawe.setSuffleTime(ssValue);
+        yabawe.setDuration(durationValue);
+        yabawe.initYabawe();
+      }
+    })();
+    </script>
+</body>
+
+</html>
